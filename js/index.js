@@ -1,7 +1,7 @@
 $(function () {
     $.ajax({
         type: "get",
-        url: "http://192.168.27.61:9090/api/getindexmenu",
+        url: "http://192.168.27.42:9090/api/getindexmenu",
         dataType: "json",
         success: function (info) {
             console.log(info);
@@ -16,7 +16,7 @@ $(function () {
 
     $.ajax({
         type: "get",
-        url: "http://192.168.27.61:9090/api/getmoneyctrl",
+        url: "http://192.168.27.42:9090/api/getmoneyctrl",
         dataType: "json",
         success: function (info) {
             console.log(info);
@@ -24,4 +24,11 @@ $(function () {
             $(".discount_content ul").html(htmlStr);
         }
     })
+
+    $(".to_top").on("click", function () {
+        $("html,body").animate({
+            scrollTop: 0
+        }, 500)
+    })
+
 })

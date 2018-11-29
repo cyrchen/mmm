@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="./css/productdetail.css" />
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css" />
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+    <div class="mm_container">
+        <!-- 头部区域 -->
+        <div class="mm_header">
+            <div class="header_logo"></div>
+            <a href="#" class="header_app"></a>
+        </div>
+        <!-- 搜索区域 -->
+        <div class="mm_search">
+            <input type="text" placeholder="请输入你想比价的商品" />
+            <button class="search_btn">搜索</button>
+        </div>
+
+        <!-- 筛选 -->
+        <div class="mm_nav clearfix">
+            <div class="nav_l fl">
+                    <a href="index.html">首页 ></a>
+                    <a href="javascript:history.back();" class="lay"> </a>>
+                    <a href="javascript:;"class="lay2" >乐视 </a>>
+            </div>
+            <div class="nav_r fr">
+                <button>筛选</button>
+            </div>
+        </div>
+
+        <!-- 商品区域 -->
+        <div class="product_show">
+            <!--  -->
+        </div>
+
+        <!-- 网友评价 -->
+        <div class="assess">
+            <p class="ass_top">网友评价</p>
+            <ul class="ass_ms">
+                <!--  -->
+            </ul>
+            <div class="ass_b">
+                <button class="btn">查看更多评价</button>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- 底部 -->
+        <div class="mm_footer">
+
+            <div class="footer_nav">
+                <ul>
+                    <li style="width:30%;"><a href="#">登录</a></li>
+                    <li style="width:30%;"><a href="#">注册</a></li>
+                    <li style="width:40%;"><a class="to_top" href="#"><img src="./images/top.jpg" alt=""><span>返回顶部</span></a></li>
+                </ul>
+            </div>
+            <div class="footer_mob">
+                <p><span class="copy">手机APP下载</span>
+                    <span class="mobile">慢慢买手机版</span>
+                    <span class="bj">--掌上比价平台</span></p>
+                <p class="com">m.manmanbuy.com</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/html" id="productTpl">
+        {{each result v i}}
+        <div class="product_prp">
+                <div class="pro_name">
+                        {{v.productName}}
+                    </div>
+                    <div class="pro_img">
+                        {{@v.productImg}}
+                    </div>
+                    <div class="pro_col">
+                        <img src="./images/sc.jpg" alt="">
+                    </div>
+        </div>
+        
+            <div class="product_tab">
+                    <ul class="clearfix">
+                        <li class="first"><a href="#">比价购买</a></li>
+                        <li class="second"><a href="#">产品参数</a></li>
+                        <li><a href="#">评价(2322)</a></li>
+                    </ul>
+                </div>
+                <div class="product_tips">
+                    <div class="tips">
+                            {{@v.bjShop}}
+                    </div>
+                    
+                    <div class="tips_b">
+                        <p>*实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</p>
+                    </div>
+                </div>
+        {{/each}}
+</script>
+
+    <script type="text/html" id="comTpl">
+        {{ each result v i }}
+        <li>
+                <p class="first clearfix"><span class="username fl">{{v.comName}}</span>
+                    <span class="time fr">{{v.comTime}}</span>
+                </p>
+                <p class="second">{{v.comFrom}}</p>
+                <p class="third">{{v.comContent}}</p>
+            </li>
+{{ /each }}
+</script>
+
+    <script type="text/html" id="tpl">
+        {{each result v i}}
+               <a href="index.html">首页 ></a>
+                <a href="javascript:history.back();">{{v.category}}></a>
+                <a href="javascript:;">乐视 ></a>
+       {{/each}}
+</script>
+
+
+
+
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/productdetail.js"></script>
+</body>
+
+</html>
