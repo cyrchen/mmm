@@ -1,0 +1,96 @@
+@import "common";
+.mm_moneyctrl {
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+// 头部区域
+.mm_header {
+    width: 100%;
+    height: 90rem / @base;
+    background-color: @mmColor;
+    position: relative;
+    h3 {
+        width: 100%;
+        height: 90rem / @base;
+        text-align: center;
+        line-height: 90rem / @base;
+        color: #fff;
+        font-size: 34rem / @base;
+    }
+    .header_app {
+        width: 100rem / @base;
+        height: 100rem / @base;
+        position: absolute;
+        top: 0;
+        right: 10rem / @base;
+        background: url("../images/header_app.png") center no-repeat;
+        background-size: 68rem / @base 68rem / @base;
+    }
+}
+
+//
+.mm_product {
+    background-color: #fff;
+    width: 100%;
+    li {
+        padding: 25rem / @base 15rem / @base;
+        width: 100%;
+        height: 240rem / @base;
+        border-bottom: 2rem / @base solid #ccc;
+        box-sizing: border-box;
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            .content_left {
+                float: left;
+                width: 200rem / @base;
+                height: 240rem / @base;
+                img {
+                    width: 200rem / @base;
+                    height: 200rem / @base;
+                }
+            }
+            .content_right {
+                float: left;
+                width: 500rem / @base;
+                height: 100%;
+                .title {
+                    font-size: 20rem / @base;
+                    span {
+                        color: #ff5f37;
+                    }
+                }
+                .content_bottom {
+                    padding-top: 60rem / @base;
+                    box-sizing: border-box;
+                    p {
+                        color: #ccc;
+                        font-size: 22rem / @base;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 
+.mm_page {
+    width: 100%;
+    border-bottom: 1rem / @base solid #ccc;
+    background-color: #fff;
+    position: relative;
+    padding: 20rem / @base 40rem / @base 0;
+    button {
+        width: 160rem / @base;
+        height: 68rem / @base;
+        border-radius: 5rem / @base;
+    }
+    select {
+        width: 160rem / @base;
+        height: 68rem / @base;
+        margin: 0 90rem / @base;
+        text-indent: 2em;
+    }
+}

@@ -8,14 +8,15 @@ $(function () {
     var arr = str.split("&");
     var str1 = +arr[0].split("=")[1];
     var str2 = arr[1].split("=")[1];
-    
+
     var productid = str1;
-    // console.log(str2);
+
+
 
     $('.lay2').text(str2);
     $.ajax({
         type: "get",
-        url: "http:/192.168.27.42:9090/api/getproduct",
+        url: "http:/127.0.0.1:9090/api/getproduct",
         data: {
             productid: productid
         },
@@ -25,10 +26,10 @@ $(function () {
             categoryid = info.result[0].categoryId;
             var htmlStr = template("productTpl", info);
             $(".product_show").html(htmlStr);
-                // console.log(categoryid);
+            // console.log(categoryid);
             $.ajax({
                 type: "get",
-                url: "http://192.168.27.42:9090/api/getcategorybyid",
+                url: "http://127.0.0.1:9090/api/getcategorybyid",
                 data: {
                     categoryid: categoryid,
                 },
@@ -48,7 +49,7 @@ $(function () {
 
     $.ajax({
         type: "get",
-        url: "http://192.168.27.42:9090/api/getproductcom",
+        url: "http://127.0.0.1:9090/api/getproductcom",
         data: {
             productid: productid
         },

@@ -1,7 +1,7 @@
 $(function () {
     $.ajax({
         type: "get",
-        url: "http://192.168.27.42:9090/api/getindexmenu",
+        url: "http://127.0.0.1:9090/api/getindexmenu",
         dataType: "json",
         success: function (info) {
             console.log(info);
@@ -16,7 +16,7 @@ $(function () {
 
     $.ajax({
         type: "get",
-        url: "http://192.168.27.42:9090/api/getmoneyctrl",
+        url: "http://127.0.0.1:9090/api/getmoneyctrl",
         dataType: "json",
         success: function (info) {
             console.log(info);

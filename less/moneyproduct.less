@@ -1,0 +1,203 @@
+@import "common";
+.mm_moneyproduct {
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+// 头部区域
+.mm_header {
+  width: 100%;
+  height: 90rem / @base;
+  background-color: @mmColor;
+  position: relative;
+  h3 {
+    width: 100%;
+    height: 90rem / @base;
+    text-align: center;
+    line-height: 90rem / @base;
+    color: #fff;
+    font-size: 34rem / @base;
+  }
+  .header_app {
+    width: 100rem / @base;
+    height: 100rem / @base;
+    position: absolute;
+    top: 0;
+    right: 10rem / @base;
+    background: url("../images/header_app.png") center no-repeat;
+    background-size: 68rem / @base 68rem / @base;
+  }
+}
+
+//
+
+.product_content {
+  background-color: #fff;
+  padding: 10rem / @base;
+  box-sizing: border-box;
+  .content_top {
+    .top_title {
+      text-align: left;
+      font-weight: bold;
+      font-size: 24rem / @base;
+      color: #666;
+    }
+    .top_info {
+      margin: 10rem / @base 0 10rem / @base;
+      font-size: 16rem / @base;
+      color: #999;
+      &.one {
+        margin: 0 5rem / @base;
+      }
+      &.two {
+        margin-right: 5rem / @base;
+      }
+      &.three {
+        margin-right: 5rem / @base;
+      }
+    }
+    .top_con {
+      .con_right {
+        float: right;
+        img {
+          width: 300rem / @base;
+          height: 300rem / @base;
+        }
+      }
+      .p1 {
+        font-size: 18rem / @base;
+      }
+      .p2 {
+        margin: 6rem / @base auto;
+        font-size: 18rem / @base;
+      }
+      .p3 {
+        font-size: 18rem / @base;
+        text-align: center;
+        width: 100%;
+      }
+    }
+    .imglg {
+      img {
+        width: 100%;
+        height: 100%;
+        margin: 5rem / @base auto;
+      }
+    }
+    .city {
+      ul {
+        display: block;
+        width: 280rem / @base;
+        margin: 0 auto;
+        box-shadow: 1rem / @base 2rem / @base 5rem / @base rgba(0, 0, 0, 0.5);
+        padding: 0 20rem / @base 10rem / @base;
+        box-sizing: border-box;
+        li {
+          border-bottom: 1rem / @base dashed #ccc;
+          position: relative;
+          span {
+            font-size: 22rem / @base;
+            strong {
+              position: absolute;
+              right: 0;
+              top: 8rem / @base;
+              color: #f37b31;
+            }
+          }
+        }
+      }
+    }
+  }
+  .btn {
+    margin-top: 40rem / @base;
+    padding: 0 40rem / @base 40rem / @base;
+    width: 100%;
+    height: 70rem / @base;
+    line-height: 70rem / @base;
+    font-size: 24rem / @base;
+    background-color: #ff9000;
+    color: #fff;
+    border: none;
+    border-radius: 10rem / @base;
+  }
+  img {
+    width: 704rem / @base;
+    height: 274rem / @base;
+    display: block;
+    margin: 80rem / @base auto;
+  }
+  .comment {
+    .tit {
+      margin-top: 10rem / @base;
+    }
+    .reply {
+      margin-top: 30rem / @base;
+      .form {
+        border: 2rem / @base solid #efedec;
+        textarea {
+          width: 100%;
+          height: 150rem / @base;
+        }
+        .ctrl {
+          position: relative;
+          margin-top: -10rem / @base;
+          width: 100%;
+          height: 80rem / @base;
+          background-color: #fbfbfb;
+          input {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 200rem / @base;
+            height: 80rem / @base;
+            background-color: #ff841d;
+            border: none;
+          }
+        }
+      }
+    }
+    .list {
+      li {
+        padding: 20rem / @base 24rem / @base;
+        overflow: hidden;
+        .userimg {
+          width: 80rem / @base;
+          height: 80rem / @base;
+          float: left;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            margin: 0;
+          }
+        }
+        .con {
+          margin-left: 100rem / @base;
+          font-size: 18rem / @base;
+          .name {
+            height: 30rem / @base;
+            .username {
+              float: left;
+              font-size: 16rem / @base;
+              color: #7ba1cc;
+            }
+            .time {
+              float: right;
+              font-size: 16rem / @base;
+              color: #9aa5b8;
+            }
+          }
+          .content {
+            font-size: 24rem / @base;
+            color: #615053;
+            img {
+              width: 22rem / @base;
+              height: 22rem / @base;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
