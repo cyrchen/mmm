@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="./css/discount.css">
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+
+    <div class="mm_moneyproduct">
+        <!-- 头部区域 -->
+        <div class="mm_header">
+            <h3>国内折扣</h3>
+            <a href="#" class="header_app"></a>
+        </div>
+
+        <!-- 产品 -->
+        <div class="product_content">
+            <!-- <div class="content_top">
+                <div class="top_title">{{v.productName}}</div>
+                <div class="top_info">
+                    <span class="one">{{v.productFrom}}</span>
+                    <span class="two">{{v.productTime}}</span>
+                    <span class="three">{{v.productTips}}</span>
+                </div>
+                <div class="top_con clearfix">
+                    <div class="con_right">
+                        {{@v.productImgSm}}
+                    </div>
+                    <p class="p1">{{v.productInfo}}</p>
+                    <p class="p2">{{v.productInfo1}}</p>
+                    <p class="p3">{{v.productInfo2}}</p>
+                </div>
+                <div class="imglg">
+                    {{@v.productImgLg}}
+                </div>
+                <div class="city">
+                    {{@v.productCity}}
+                </div>
+                <button class="btn">前往购买</button>
+                <img src="./images/mmbweixin2.png" alt="">
+                <div class="comment">
+                    {{@v.productComment}}
+                </div>
+            </div> -->
+
+        </div>
+
+        <!-- 底部 -->
+        <div class="mm_footer">
+            <div class="footer_nav">
+                <ul>
+                    <li style="width:30%;"><a href="#">登录</a></li>
+                    <li style="width:30%;"><a href="#">注册</a></li>
+                    <li style="width:40%;"><a class="to_top" href="#"><img src="./images/top.jpg" alt=""><span>返回顶部</span></a></li>
+                </ul>
+            </div>
+            <div class="footer_mob">
+                <p><span class="copy">手机APP下载</span>
+                    <span class="mobile">慢慢买手机版</span>
+                    <span class="bj">--掌上比价平台</span></p>
+                <p class="com">m.manmanbuy.com</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/html" id="tpl">
+        {{each result v i}}
+        <div class="content_top">
+                <div class="top_title">{{v.productName}}</div>
+                <div class="price">{{v.productPrice}}</div>
+                <div class="top_info">
+                    <span class="one">{{v.productFrom}}</span>
+                    <span class="two">{{v.productTime}}</span>
+                    <span class="three">{{v.productTips}}</span>
+                </div>
+                <div class="top_con clearfix">
+                    <div class="con_right">
+                        <img src="./images/20170417214649119.jpg" alt="">
+                    </div>                             
+                    <div class="imglg">
+                            <p class="p1">{{v.productInfo}}</p>
+                            {{@v.productImg}}
+                        </div>
+                </div>
+                
+               
+                <button class="btn">前往购买</button>
+                <img src="./images/mmbweixin2.png" alt="">
+                <div class="comment">
+                    {{@v.productComment}}
+                </div>
+            </div>
+        {{/each}}
+    </script>
+
+
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/discount.js"></script>
+
+</body>
+
+</html>

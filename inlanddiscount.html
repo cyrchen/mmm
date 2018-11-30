@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="./css/inlanddiscount.css">
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+
+    <div class="mm_inlanddiscount">
+        <!-- 头部区域 -->
+        <div class="mm_header">
+            <h3>国内折扣</h3>
+            <a href="#" class="header_app"></a>
+        </div>
+
+        <!-- 产品区域 -->
+        <div class="product_content">
+            <ul class="clearfix">
+                <!--  -->
+            </ul>
+        </div>
+
+
+
+
+
+
+
+        <!-- 底部 -->
+        <div class="mm_footer">
+            <div class="footer_nav">
+                <ul>
+                    <li style="width:30%;"><a href="#">登录</a></li>
+                    <li style="width:30%;"><a href="#">注册</a></li>
+                    <li style="width:40%;"><a class="to_top" href="#"><img src="./images/top.jpg" alt=""><span>返回顶部</span></a></li>
+                </ul>
+            </div>
+            <div class="footer_mob">
+                <p><span class="copy">手机APP下载</span>
+                    <span class="mobile">慢慢买手机版</span>
+                    <span class="bj">--掌上比价平台</span></p>
+                <p class="com">m.manmanbuy.com</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/html" id="tpl">
+        {{each result v i}}
+       <li><a href="discount.html?productid={{v.productId}}">
+           <div class="img">
+                {{@v.productImg}}
+           </div>
+            
+            <p class="title txt-cut">{{v.productName}}</p>
+            <p class="price">{{v.productPrice}}</p>
+            <p class="bot"><span>{{v.productFrom}}</span><span class="line">|</span><span>{{v.productTime}}</span></p>
+        </a></li>
+       {{/each}}
+    </script>
+
+
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/inlanddiscount.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+@import "common";
+.mm_inlanddiscount {
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+// 头部区域
+.mm_header {
+  width: 100%;
+  height: 90rem / @base;
+  background-color: @mmColor;
+  position: relative;
+  h3 {
+    width: 100%;
+    height: 90rem / @base;
+    text-align: center;
+    line-height: 90rem / @base;
+    color: #fff;
+    font-size: 34rem / @base;
+  }
+  .header_app {
+    width: 100rem / @base;
+    height: 100rem / @base;
+    position: absolute;
+    top: 0;
+    right: 10rem / @base;
+    background: url("../images/header_app.png") center no-repeat;
+    background-size: 68rem / @base 68rem / @base;
+  }
+}
+
+.product_content {
+  width: 100%;
+  background-color: #fff;
+  li {
+    float: left;
+    width: 50%;
+    height: 530rem / @base;
+    padding: 20rem / @base 20rem / @base;
+    border-right: 1rem / @base solid #ccc;
+    border-bottom: 1rem / @base solid #ccc;
+    box-sizing: border-box;
+    a {
+      display: block;
+      width: 100%;
+      height: 530rem / @base;
+      .img {
+        width: 300rem / @base;
+        height: 300rem / @base;
+        img {
+          width: 300rem / @base;
+          height: 300rem / @base;
+        }
+      }
+      .title {
+        font-size: 28rem / @base;
+      }
+      .price {
+        font-size: 26rem / @base;
+        color: #ff6608;
+        padding: 10rem / @base 10rem / @base 0;
+      }
+      .bot {
+        font-size: 20rem / @base;
+        color: #a2a6a9;
+        padding: 15rem / @base;
+        .line {
+          padding: 0 5rem / @base 0;
+        }
+      }
+    }
+  }
+}
