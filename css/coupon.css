@@ -215,6 +215,7 @@ body {
   color: #ccc;
 }
 .mm_container {
+  height: 26.66666667rem;
   padding-top: 0;
 }
 .mm_header {
@@ -240,140 +241,38 @@ body {
   background: url("../images/header_app.png") center no-repeat;
   background-size: 0.90666667rem 0.90666667rem;
 }
-.bcj_nav {
-  width: 100%;
-  height: 1.01333333rem;
+.mm_content {
   background-color: #fff;
+  padding: 0.26666667rem 0.16rem;
 }
-.bcj_nav .ul-wrapper {
-  overflow: hidden;
-  width: 100%;
-  height: 1.01333333rem;
-}
-.bcj_nav .ul-wrapper li {
+.mm_content ul li {
   float: left;
-  line-height: 1.01333333rem;
-  font-size: 0.32rem;
+  width: 32%;
+  height: 2rem;
+  border: 0.01333333rem solid #ccc;
+  margin-top: 0.16rem;
+  box-sizing: border-box;
 }
-.bcj_nav .ul-wrapper li a {
+.mm_content ul li a {
   display: block;
-  margin: 0 0.26666667rem;
-  color: #000;
-  height: 100%;
-}
-.bcj_nav .ul-wrapper li a.active {
-  color: #f4483e;
-  border-bottom: 0.06666667rem solid #f4483e;
-}
-.pro_list ul li {
-  margin: 5px 0;
-  padding: 5px 2px;
-  background: #fff;
-}
-.pro_list ul li .left {
-  width: 3.46666667rem;
-  height: 3.46666667rem;
-}
-.pro_list ul li .left img {
   width: 100%;
   height: 100%;
-  display: block;
 }
-.pro_list ul li .right {
-  overflow: hidden;
-  padding-left: 0.10666667rem;
+.mm_content ul li a .box {
+  width: 1.33333333rem;
+  height: 1.73333333rem;
+  padding: 0.13333333rem 0;
+  margin: 0 auto;
 }
-.pro_list ul li .right .txt1 {
-  font-size: 0.18666667rem;
-  height: 1.06666667rem;
+.mm_content ul li a .box img {
+  width: 1.33333333rem;
+  height: 1.33333333rem;
 }
-.pro_list ul li .right .txt2 {
+.mm_content ul li a .box p {
   font-size: 0.26666667rem;
-  color: #fc2e6b;
-  margin-bottom: 0.06666667rem;
-  line-height: 0.4rem;
-  height: 0.8rem;
-}
-.pro_list ul li .right .txt2 i {
-  font-size: 0.18666667rem;
-}
-.pro_list ul li .right .txt2 strong {
-  font-size: 0.26666667rem;
-  font-weight: 400;
-}
-.pro_list ul li .right .txt2 em {
-  font-size: 0.18666667rem;
-  padding: 0.06666667rem;
-  font-style: normal;
-}
-.pro_list ul li .right .txt2 del {
-  margin-left: 0.13333333rem;
-  text-decoration: line-through;
-  color: #999;
-  font-size: 0.18666667rem;
-}
-.pro_list ul li .right .bar {
-  font-size: 0.16rem;
-  color: #fc2e6b;
-  height: 0.8rem;
-}
-.pro_list ul li .right .bar b {
-  margin-left: 0.2rem;
-}
-.pro_list ul li .right .bar i {
-  width: 45%;
-  height: 0.21333333rem;
-  line-height: 0.21333333rem;
-  display: inline-block;
-  background: #ffb7b7;
   text-align: center;
-  color: #fff;
-  border: 1px solid #fc353a;
-  position: relative;
-  border-radius: 0.13333333rem;
-  z-index: 2;
-  top: 0.05333333rem;
-  overflow: hidden;
 }
-.pro_list ul li .right .bar i em {
-  width: 50%;
-  height: 100%;
-  border-radius: 0.13333333rem;
-  background: #fc353a;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  font-style: normal;
-}
-.pro_list ul li .right .bar i span {
-  position: absolute;
-  z-index: 4;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.pro_list ul li .right .bot {
-  margin-top: 0.13333333rem;
-  font-size: 0.16rem;
-  height: 0.66666667rem;
-  line-height: 0.66666667rem;
-}
-.pro_list ul li .right .bot :nth-child(1) {
-  height: 100%;
-  float: left;
-  padding: 0 0.06666667rem;
-  color: #e97b66;
-  display: inline-block;
-  border: 0.01333333rem dashed #e97b66;
-}
-.pro_list ul li .right .bot :nth-child(2) {
-  display: inline-block;
-  float: right;
-  height: 100%;
-  padding: 0.01333333rem 0.06666667rem;
-  width: auto;
-  background: #ff5e5d;
-  color: #fff;
-  border-radius: 0.08rem;
-  font-size: 0.16rem;
+.mm_content ul :nth-child(3n-1) {
+  margin-left: 2%;
+  margin-right: 2%;
 }
