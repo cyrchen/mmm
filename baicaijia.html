@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="./css/baicaijia.css" />
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+    <div class="mm_container">
+        <!-- 头部区域 -->
+        <div class="mm_header">
+            <h3>白菜价-淘宝内部劵</h3>
+            <a href="#" class="header_app"></a>
+        </div>
+
+        <!-- 导航区域 -->
+        <div class="bcj_nav">
+            <div class="ul-wrapper">
+                <ul class=" clearfix">
+                    <!---->
+                </ul>
+            </div>
+        </div>
+
+        <!-- 商品区域 -->
+        <div class="pro_list">
+            <ul class="pro_ul">
+                <!-- 挖个坑 -->
+            </ul>
+        </div>
+
+        <!-- 底部 -->
+        <div class="mm_footer">
+            <div class="footer_nav">
+                <ul>
+                    <li style="width:30%;"><a href="#">登录</a></li>
+                    <li style="width:30%;"><a href="#">注册</a></li>
+                    <li style="width:40%;">
+                        <a class="to_top" href="#"><img src="./images/top.jpg" alt="" /><span>返回顶部</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_mob">
+                <p>
+                    <span class="copy">手机APP下载</span>
+                    <span class="mobile">慢慢买手机版</span>
+                    <span class="bj">--掌上比价平台</span>
+                </p>
+                <p class="com">m.manmanbuy.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/html" id="tpl1">
+        {{each result v i}}
+          <li data-id={{v.titleId}}><a  class="{{v.titleId == 0 ? 'active' : '' }}"
+             href="javascript:;">{{v.title}}</a></li>
+
+      {{/each}}
+    </script>
+
+    <script type="text/html" id="tpl2">
+        {{each result v i}}
+        <li class="clearfix">
+            <a class="meng" href="#"></a>
+            <div class="left fl img_box">
+                {{@v.productImg}}
+            </div>
+            <div class="right">
+                <div class="txt1 txt-cut">
+                    {{@v.productName}}
+                </div>
+                <p class="txt2">
+                    {{@v.productPrice}}
+                </p>
+                {{@v.productCouponRemain}}
+                <div class="bot clearfix">
+                    {{@v.productCoupon}} {{@v.productHref}}
+                </div>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/iscroll/iscroll.js"></script>
+    <script src="./js/baicaijia.js"></script>
+</body>
+
+</html>

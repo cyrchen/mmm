@@ -1,0 +1,175 @@
+@import "common";
+.mm_container {
+  height: 2000rem / @base;
+  padding-top: 0;
+}
+
+// 头部区域
+.mm_header {
+  width: 100%;
+  height: 90rem / @base;
+  background-color: #f4483e;
+  position: relative;
+  h3 {
+    width: 100%;
+    height: 90rem / @base;
+    text-align: center;
+    line-height: 90rem / @base;
+    color: #fff;
+    font-size: 34rem / @base;
+  }
+  .header_app {
+    width: 100rem / @base;
+    height: 100rem / @base;
+    position: absolute;
+    top: 0;
+    right: 10rem / @base;
+    background: url("../images/header_app.png") center no-repeat;
+    background-size: 68rem / @base 68rem / @base;
+  }
+}
+
+.bcj_nav {
+  width: 100%;
+  height: 76rem / @base;
+  background-color: #fff;
+  .ul-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 76rem / @base;
+    li {
+      float: left;
+      line-height: 76rem / @base;
+      font-size: 24rem / @base;
+
+      a {
+        display: block;
+        margin: 0 20rem / @base;
+        color: #000;
+        height: 100%;
+        &.active {
+          color: #f4483e;
+          border-bottom: 5rem / @base solid #f4483e;
+        }
+      }
+    }
+  }
+}
+
+.pro_list {
+  ul {
+    li {
+      margin: 5px 0;
+      padding: 5px 2px;
+      background: #fff;
+      .left {
+        width: 260rem / @base;
+        height: 260rem / @base;
+        img {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+      }
+      .right {
+        overflow: hidden;
+        padding-left: 8rem / @base;
+        .txt1 {
+          font-size: 14rem / @base;
+          height: 80rem / @base;
+        }
+        .txt2 {
+          font-size: 20rem / @base;
+          color: #fc2e6b;
+          margin-bottom: 5rem / @base;
+          line-height: 30rem / @base;
+          height: 60rem / @base;
+          i {
+            font-size: 14rem / @base;
+          }
+          strong {
+            font-size: 20rem / @base;
+            font-weight: 400;
+          }
+          em {
+            font-size: 14rem / @base;
+            padding: 5rem / @base;
+            font-style: normal;
+          }
+          del {
+            margin-left: 10rem / @base;
+            text-decoration: line-through;
+            color: #999;
+            font-size: 14rem / @base;
+          }
+        }
+
+        .bar {
+          font-size: 12rem / @base;
+          color: #fc2e6b;
+          height: 60rem / @base;
+          b {
+            margin-left: 15rem / @base;
+          }
+          i {
+            width: 45%;
+            height: 16rem / @base;
+            line-height: 16rem / @base;
+            display: inline-block;
+            background: #ffb7b7;
+            text-align: center;
+            color: #fff;
+            border: 1px solid #fc353a;
+            position: relative;
+            border-radius: 10rem / @base;
+            z-index: 2;
+            top: 4rem / @base;
+            overflow: hidden;
+            em {
+              width: 50%;
+              height: 100%;
+              border-radius: 10rem / @base;
+              background: #fc353a;
+              position: absolute;
+              left: 0;
+              top: 0;
+              z-index: 1;
+              font-style: normal;
+            }
+            span {
+              position: absolute;
+              z-index: 4;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+        }
+        .bot {
+          margin-top: 10rem / @base;
+          font-size: 12rem / @base;
+          height: 50rem / @base;
+          line-height: 50rem / @base;
+          :nth-child(1) {
+            height: 100%;
+            float: left;
+            padding: 0 5rem / @base;
+            color: #e97b66;
+            display: inline-block;
+            border: 1rem / @base dashed #e97b66;
+          }
+          :nth-child(2) {
+            display: inline-block;
+            float: right;
+            height: 100%;
+            padding: 1rem / @base 5rem / @base;
+            width: auto;
+            background: #ff5e5d;
+            color: #fff;
+            border-radius: 6rem / @base;
+            font-size: 12rem / @base;
+          }
+        }
+      }
+    }
+  }
+}
