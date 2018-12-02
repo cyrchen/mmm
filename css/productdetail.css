@@ -79,9 +79,15 @@ body {
 .fr {
   float: right;
 }
+.txt-cut {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
 .mm_container {
   width: 100%;
-  background-color: #f1f1f1;
   padding-top: 1.33333333rem;
 }
 .mm_header {
@@ -91,6 +97,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
 }
 .mm_header .header_logo {
   width: 4.94666667rem;
@@ -188,11 +195,13 @@ body {
   padding-bottom: 0.06666667rem;
 }
 .mm_footer .footer_mob {
-  margin-top: 0.26666667rem;
+  width: 100%;
+  height: 1.65333333rem;
+  margin-top: 0.33333333rem;
   text-align: center;
 }
 .mm_footer .footer_mob p {
-  font-size: 0.21333333rem;
+  font-size: 0.29333333rem;
   padding: 0.06666667rem;
   font-weight: bold;
 }

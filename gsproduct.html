@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="./css/gsproduct.css" />
+    <link rel="stylesheet" href="./lib/bootstrap//css/bootstrap.min.css">
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+    <div class="mm_container">
+        <!-- 头部区域 -->
+        <div class="mm_header">
+            <h3>凑单品</h3>
+            <a href="#" class="header_app"></a>
+        </div>
+
+
+        <!--  -->
+        <div class="nav">
+            <div class="mm_nav">
+                <ul class="box_nav clearfix">
+                    <li class="box">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                data-toggle="dropdown">
+                                京东
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">京东<span class="glyphicon glyphicon-ok"></span></a></li>
+                                <li><a tabindex="-1" href="#">一号店<span class="glyphicon glyphicon-ok"></span></a></li>
+                                <li><a tabindex="-1" href="#">天猫超市<span class="glyphicon glyphicon-ok"></span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                data-toggle="dropdown">
+                                华北
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">京东</a></li>
+                                <li><a tabindex="-1" href="#">一号店</a></li>
+                                <li><a tabindex="-1" href="#">天猫超市</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                data-toggle="dropdown">
+                                全部价格
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="main">
+            <ul class="clearfix">
+                <li>
+                    <img src="http://d6.yihaodianimg.com/N07/M0A/6C/9E/CgQIz1XS7ZOAK8YGAAOYScgyGpI02701_230*230.jpg"
+                        alt="">
+                    <p class="productName txt-cut-1">新雅 广式莲蓉月饼 100g/袋</p>
+                    <div class="price">"¥0.01" <a href="#">去凑单</a></div>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- 底部 -->
+        <div class="mm_footer">
+            <div class="footer_nav">
+                <ul>
+                    <li style="width:30%;"><a href="#">登录</a></li>
+                    <li style="width:30%;"><a href="#">注册</a></li>
+                    <li style="width:40%;">
+                        <a class="to_top" href="#"><img src="./images/top.jpg" alt="" /><span>返回顶部</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_mob">
+                <p>
+                    <span class="copy">手机APP下载</span>
+                    <span class="mobile">慢慢买手机版</span>
+                    <span class="bj">--掌上比价平台</span>
+                </p>
+                <p class="com">m.manmanbuy.com</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/html" id="nav-shop">
+        {{each result v i}}
+        <li data-shopId="{{v.shopId}}"><a tabindex="-1" href="#">{{v.shopName}}</a></li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="nav-adress">
+        {{each result v i}}
+            <li data-areaId="{{v.areaId}}"><a tabindex="-1" href="#">{{v.areaName}}</a></li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="content">
+        {{each result v i}}
+        <li>
+            <img src="{{v.productImg}}"
+                alt="">
+            <p class="productName txt-cut-1">{{v.productName}}</p>
+            <div class="price">{{v.productPrice}}<a href="#">去凑单</a></div>
+        </li>
+        {{/each}}
+    </script>
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/gsproduct.js"></script>
+</body>
+
+</html>

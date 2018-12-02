@@ -1,39 +1,155 @@
-@import "common";
-.mm_category {
-  border-radius: 10rem / @base;
-  .list-title {
+@import "base";
+@desgin: 750;
+@base: @desgin / 10;
+@mmColor: #ff841d;
+.mm_container {
     width: 100%;
-    line-height: 80rem / @base;
-    font-weight: bolder;
-    border-bottom: 1px solid #ccc;
-    .getCategory {
-      color: #000;
-      display: block;
-      width: 100%;
-      height: 100%;
-      padding: 0 20rem / @base 0 40rem / @base;
-      background: url("../images/arrow1.gif") no-repeat center right;
+    padding-top: 100rem / @base;
+}
+
+//公共头部
+.mm_header {
+    width: 100%;
+    height: 100rem / @base;
+    background-color: @mmColor;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    .header_logo {
+        width: 371rem / @base;
+        height: 50rem / @base;
+        position: absolute;
+        top: 24rem / @base;
+        left: 32rem / @base;
+        background: url("../images/header_logo.png") center no-repeat;
+        background-size: 371rem / @base 50rem / @base;
     }
-    ul {
-      border: 1px solid #ccc;
-      border-bottom: none;
-      border-top: none;
-      background-color: #f9f9f9;
-      overflow: hidden;
-      li {
-        text-align: center;
-        border-right: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;
-        box-sizing: border-box;
+    .header_app {
+        width: 100rem / @base;
+        height: 100rem / @base;
+        position: absolute;
+        top: 0;
+        right: 10rem / @base;
+        background: url("../images/header_app.png") center no-repeat;
+        background-size: 68rem / @base 68rem / @base;
+    }
+}
+
+//公共搜索区域
+.mm_search {
+    width: 100%;
+    height: 100rem / @base;
+    background-color: #fff;
+    padding: 20rem / @base;
+    input {
+        width: 560rem / @base;
+        height: 60rem / @base;
         float: left;
-        width: 33.3%;
-        a {
-          width: 100%;
-          height: 100%;
-          display: block;
-          font-size: 24rem / @base;
-        }
-      }
+        border-radius: 50rem / @base;
+        background-color: #f1f1f1;
+        border: none;
+        font-size: 18rem / @base;
+        padding: 30rem / @base;
     }
-  }
+    .search_btn {
+        width: 126rem / @base;
+        height: 60rem / @base;
+        float: right;
+        background-color: @mmColor;
+        border-radius: 50rem / @base;
+        border: none;
+        font-size: 18rem / @base;
+        color: #fff;
+    }
+}
+
+.mm_category {
+    background-color: #f1f1f1;
+    border-radius: 10rem / @base;
+    .list-title {
+        width: 100%;
+        line-height: 80rem / @base;
+        font-weight: bolder;
+        border-bottom: 1px solid #ccc;
+        .getCategory {
+            color: #000;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 0 20rem / @base 0 40rem / @base;
+            background: url("../images/arrow1.gif") no-repeat center right;
+        }
+        ul {
+            border: 1px solid #ccc;
+            border-bottom: none;
+            border-top: none;
+            background-color: #f9f9f9;
+            overflow: hidden;
+            li {
+                text-align: center;
+                border-right: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                box-sizing: border-box;
+                float: left;
+                width: 33.3%;
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    font-size: 24rem / @base;
+                }
+            }
+        }
+    }
+}
+
+.mm_footer {
+    background-color: #f1f1f1;
+    .footer_nav {
+        margin-top: 55rem / @base;
+        width: 100%;
+        height: 68rem / @base;
+        ul {
+            li:nth-child(2) {
+                border-left: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+            }
+            li {
+                float: left;
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                text-align: center;
+                line-height: 68rem / @base;
+                a {
+                    font-size: 18rem / @base;
+                    img {
+                        width: 28rem / @base;
+                        height: 25rem / @base;
+                        padding-bottom: 5rem / @base;
+                    }
+                }
+            }
+        }
+    }
+    .footer_mob {
+        width: 100%;
+        height: 124rem / @base;
+        margin-top: 25rem / @base;
+        text-align: center;
+        p {
+            font-size: 22rem / @base;
+            padding: 5rem / @base;
+            font-weight: bold;
+            .copy {
+                color: #ff0a07;
+            }
+            .bj {
+                color: #ccc;
+            }
+        }
+        p.com {
+            color: #ccc;
+        }
+    }
 }

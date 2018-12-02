@@ -1,173 +1,174 @@
 @import "common";
 .mm_nav {
-    width: 100%;
+  width: 100%;
+  height: 76rem / @base;
+  border-top: 1rem / @base solid #ccc;
+  border-bottom: 1rem / @base solid #ccc;
+  padding: 0 15rem / @base;
+  background: linear-gradient(to bottom, #fbfbfb, #efefef);
+  .nav_l {
     height: 76rem / @base;
-    border-top: 1rem / @base solid #ccc;
-    border-bottom: 1rem / @base solid #ccc;
-    padding: 0 15rem / @base;
-    background: linear-gradient(to bottom, #fbfbfb, #efefef);
-    .nav_l {
-        height: 76rem / @base;
-        line-height: 76rem / @base;
+    line-height: 76rem / @base;
+  }
+  .nav_r {
+    button {
+      width: 120rem / @base;
+      height: 54rem / @base;
+      font-size: 22rem / @base;
+      display: block;
+      background-color: #e8e8e8;
+      border: none;
+      margin: 10rem / @base;
+      box-shadow: 0 1rem / @base 2rem / @base #888;
     }
-    .nav_r {
-        button {
-            width: 120rem / @base;
-            height: 54rem / @base;
-            font-size: 22rem / @base;
-            display: block;
-            background-color: #e8e8e8;
-            border: none;
-            margin: 10rem / @base;
-            box-shadow: 0 1rem / @base 2rem / @base #888;
-        }
-    }
+  }
 }
 
 .product_show {
+  width: 100%;
+  height: 780rem / @base;
+  background-color: #fff;
+  .product_prp {
     width: 100%;
-    height: 780rem / @base;
+    height: 505rem / @base;
+    position: relative;
+    .pro_name {
+      width: 100%;
+      height: 115rem / @base;
+      text-align: center;
+      padding: 25rem / @base 40rem / @base 25rem / @base 40rem / @base;
+      font-size: 32rem / @base;
+    }
+    .pro_img {
+      img {
+        width: 350rem / @base;
+        height: 300rem / @base;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .pro_col {
+      img {
+        position: absolute;
+        right: 46rem / @base;
+        bottom: 36rem / @base;
+        width: 82rem / @base;
+        height: 82rem / @base;
+      }
+    }
+  }
+  .product_tab {
+    width: 100%;
+    height: 72rem / @base;
+    border-top: 3rem / @base solid #c05935;
+    border-bottom: 3rem / @base solid #c05935;
+    box-sizing: border-box;
+    li {
+      float: left;
+      width: 33.3%;
+      height: 66rem / @base;
+      background-color: #ffc629;
+      line-height: 66rem / @base;
+      text-align: center;
+      font-size: 28rem / @base;
+      &.first {
+        background-color: #ff9916;
+      }
+      &.second {
+        border-left: 2rem / @base solid #c05935;
+        border-right: 2rem / @base solid #c05935;
+      }
+    }
+  }
+  .product_tips {
+    width: 100%;
+    height: 210rem / @base;
     background-color: #fff;
-    .product_prp {
+    border-bottom: 5rem / @base solid #606060;
+    .tips {
+      width: 100%;
+      height: 88rem / @base;
+      border-bottom: 2rem / @base solid #ccc;
+      line-height: 88rem / @base;
+      .tips_t {
         width: 100%;
-        height: 505rem/@base;
-        position: relative;
-        .pro_name {
-            width: 100%;
-            height: 115rem / @base;
-            text-align: center;
-            padding: 25rem / @base 40rem / @base 25rem / @base 40rem / @base;
-            font-size: 32rem / @base;
+        height: 88rem / @base;
+        border-bottom: 2rem / @base solid #ccc;
+        line-height: 88rem / @base;
+        img {
+          width: 30rem / @base;
+          height: 30rem / @base;
         }
-        .pro_img {
-            img {
-                width: 350rem / @base;
-                height: 300rem / @base;
-                display: block;
-                margin: 0 auto;
-            }
+        .btn {
+          width: 110rem / @base;
+          height: 44rem / @base;
+          background-color: #ff5500;
+          color: #fff;
+          border: none;
+          margin: 20rem / @base 10rem / @base;
+          border-radius: 10rem / @base;
         }
-        .pro_col {
-            img {
-                position: absolute;
-                right: 46rem / @base;
-                bottom: 36rem / @base;
-                width: 82rem / @base;
-                height: 82rem / @base;
-            }
+        .price {
+          font-size: 28rem / @base;
+          color: #cc0106;
         }
+      }
     }
-    .product_tab {
-        width: 100%;
-        height: 72rem / @base;
-        border-top: 3rem / @base solid #c05935;
-        border-bottom: 3rem / @base solid #c05935;
-        box-sizing: border-box;
-        li {
-            float: left;
-            width: 33.3%;
-            height: 66rem / @base;
-            background-color: #ffc629;
-            line-height: 66rem / @base;
-            text-align: center;
-            font-size: 28rem / @base;
-            &.first {
-                background-color: #ff9916;
-            }
-            &.second {
-                border-left: 2rem / @base solid #c05935;
-                border-right: 2rem / @base solid #c05935;
-            }
-        }
+    .tips_b {
+      height: 116rem / @base;
+      width: 100%;
+      padding: 15rem / @base 10rem / @base;
+      p {
+        font-size: 26rem / @base;
+        color: #887c7f;
+      }
     }
-    .product_tips {
-        width: 100%;
-        height: 210rem / @base;
-        background-color: #fff;
-        border-bottom: 5rem / @base solid #606060;
-        .tips {
-            width: 100%;
-            height: 88rem / @base;
-            border-bottom: 2rem / @base solid #ccc;
-            line-height: 88rem / @base;
-            .tips_t {
-                width: 100%;
-                height: 88rem / @base;
-                border-bottom: 2rem / @base solid #ccc;
-                line-height: 88rem / @base;
-                img {
-                    width: 30rem / @base;
-                    height: 30rem / @base;
-                }
-                .btn {
-                    width: 110rem / @base;
-                    height: 44rem / @base;
-                    background-color: #ff5500;
-                    color: #fff;
-                    border: none;
-                    margin: 20rem / @base 10rem / @base;
-                    border-radius: 10rem / @base;
-                }
-                .price {
-                    font-size: 28rem / @base;
-                    color: #cc0106;
-                }
-            }
-        }
-        .tips_b {
-            height: 116rem / @base;
-            width: 100%;
-            padding: 15rem / @base 10rem / @base;
-            p {
-                font-size: 26rem / @base;
-                color: #887c7f;
-            }
-        }
-    }
+  }
 }
 
 //
+
 .assess {
+  width: 100%;
+  background-color: #fff;
+  .ass_top {
     width: 100%;
-    background-color: #fff;
-    .ass_top {
-        width: 100%;
-        height: 66rem / @base;
-        background-color: #dbdbdb;
-        line-height: 66rem / @base;
-        text-align: center;
-    }
-    .ass_ms {
-        li {
-            width: 100%;
-            padding: 20rem / @base;
-            border-bottom: 1rem / @base solid #ccc;
-            p {
-                &.first {
-                    font-size: 28rem / @base;
-                    color: #72888f;
-                }
-                &.second {
-                    font-size: 28rem / @base;
-                    color: #72888f;
-                    text-align: right;
-                }
-                &.third {
-                    font-size: 25rem / @base;
-                    font-weight: bold;
-                }
-            }
+    height: 66rem / @base;
+    background-color: #dbdbdb;
+    line-height: 66rem / @base;
+    text-align: center;
+  }
+  .ass_ms {
+    li {
+      width: 100%;
+      padding: 20rem / @base;
+      border-bottom: 1rem / @base solid #ccc;
+      p {
+        &.first {
+          font-size: 28rem / @base;
+          color: #72888f;
         }
-    }
-    .ass_b {
-        width: 100%;
-        height: 100rem / @base;
-        padding: 30rem / @base 18rem / @base 0 18rem / @base;
-        .btn {
-            width: 714rem / @base;
-            height: 70rem / @base;
-            font-size: 25rem / @base;
-            font-weight: bold;
+        &.second {
+          font-size: 28rem / @base;
+          color: #72888f;
+          text-align: right;
         }
+        &.third {
+          font-size: 25rem / @base;
+          font-weight: bold;
+        }
+      }
     }
+  }
+  .ass_b {
+    width: 100%;
+    height: 100rem / @base;
+    padding: 30rem / @base 18rem / @base 0 18rem / @base;
+    .btn {
+      width: 714rem / @base;
+      height: 70rem / @base;
+      font-size: 25rem / @base;
+      font-weight: bold;
+    }
+  }
 }

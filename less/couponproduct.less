@@ -1,81 +1,80 @@
 @import "common";
 .mm_container {
-  height: 2000rem / @base;
-  padding-top: 0;
+    padding-top: 0;
 } // 头部区域
 .mm_header {
-  width: 100%;
-  height: 90rem / @base;
-  background-color: #f4483e;
-  position: relative;
-  h3 {
     width: 100%;
-    height: 90rem / @base;
-    text-align: center;
-    line-height: 90rem / @base;
-    color: #fff;
-    font-size: 34rem / @base;
-  }
-  .header_app {
-    width: 100rem / @base;
     height: 100rem / @base;
-    position: absolute;
-    top: 0;
-    right: 10rem / @base;
-    background: url("../images/header_app.png") center no-repeat;
-    background-size: 68rem / @base 68rem / @base;
-  }
+    background-color: #f4483e;
+    position: relative;
+    h3 {
+        width: 100%;
+        height: 100rem / @base;
+        text-align: center;
+        line-height: 90rem / @base;
+        color: #fff;
+        font-size: 34rem / @base;
+    }
+    .header_app {
+        width: 100rem / @base;
+        height: 100rem / @base;
+        position: absolute;
+        top: 0;
+        right: 10rem / @base;
+        background: url("../images/header_app.png") center no-repeat;
+        background-size: 68rem / @base 68rem / @base;
+    }
 }
 
 .title {
-  width: 100%;
-  height: 70rem / @base;
-  line-height: 70rem / @base;
-  text-align: center;
-  font-size: 18rem / @base;
-  color: #666;
-  background-color: #fff;
+    width: 100%;
+    height: 70rem / @base;
+    line-height: 70rem / @base;
+    text-align: center;
+    font-size: 18rem / @base;
+    color: #666;
+    background-color: #fff;
 }
 
 .mm_content {
-  background-color: #fff;
-  li {
-    width: 100%;
-    height: 280rem / @base;
-    padding: 20rem / @base;
-    border-bottom: 2rem / @base solid #ccc;
-    a {
-      width: 100%;
-      height: 100%;
-      display: block;
-      .left {
-        float: left;
-        width: 200rem / @base;
-        height: 100%;
-        img {
-          width: 200rem / @base;
-          height: 160rem / @base;
+    background-color: #fff;
+    li {
+        width: 100%;
+        height: 280rem / @base;
+        padding: 20rem / @base;
+        border-bottom: 2rem / @base solid #ccc;
+        a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            .left {
+                float: left;
+                width: 200rem / @base;
+                height: 100%;
+                img {
+                    width: 200rem / @base;
+                    height: 160rem / @base;
+                }
+            }
+            .right {
+                float: right;
+                height: 100%;
+                width: 500rem / @base;
+                padding-left: 15rem / @base;
+                box-sizing: border-box;
+                .one {
+                    font-size: 28rem / @base;
+                }
+                .two {
+                    font-size: 24rem / @base;
+                    font-weight: bolder;
+                }
+                .three {
+                    font-size: 24rem / @base;
+                    color: #ed7410;
+                    padding-top: 30rem / @base;
+                }
+            }
         }
-      }
-      .right {
-        float: right;
-        height: 100%;
-        width: 500rem / @base;
-        padding-left: 15rem / @base;
-        box-sizing: border-box;
-        .one {
-          font-size: 28rem / @base;
-        }
-        .two {
-          font-size: 24rem / @base;
-          font-weight: bolder;
-        }
-        .three {
-          font-size: 24rem / @base;
-          color: #ed7410;
-          padding-top: 30rem / @base;
-        }
-      }
     }
-  }
 }
